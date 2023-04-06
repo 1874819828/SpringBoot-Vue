@@ -1,0 +1,20 @@
+#?????
+server:
+  port: 8088
+#spring??
+spring:
+  #?????
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/ieiltps?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    name: defaultDataSource
+    # ?????
+    type: com.alibaba.druid.pool.DruidDataSource
+  #???
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      additional-exclude: static/**
